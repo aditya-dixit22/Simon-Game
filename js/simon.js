@@ -24,13 +24,8 @@ $(".btn").click(function(){
 
 
 
-
-
-
-
-
-
 // ----------------------------- functions ----------------------------------//
+
 
 const nextSequence = () => {
   userSequence = [];
@@ -47,7 +42,10 @@ const playSound = name => {
 }
 
 const showLevel = level => {
-  $("#level-title").text("Level "+level);
+  setTimeout(() => {
+        $("#level-title").text("Level "+level);
+      },1000);
+  
 }
 
 const pressAnimation = chosenColor => {
